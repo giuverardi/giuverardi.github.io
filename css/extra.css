@@ -3,14 +3,8 @@
     display: none;
 }
 
-/* Nascondi la barra di ricerca nell'header */
-.md-header-nav__icon.md-icon.md-search {
-    display: none;
-}
-
-/* Nascondi il campo di input di ricerca */
-.md-search__input {
-    display: none;
+.md-header-nav__source, .md-search {
+    display: none !important;
 }
 
 /* Giustifica il contenuto del testo */
@@ -22,3 +16,20 @@
 .md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 {
     text-align: justify;
 }
+
+.text-and-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .text-content {
+    flex: 1;
+    margin-right: 20px; /* Spazio tra il testo e l'immagine */
+  }
+  
+  .image-content img {
+    width: auto; /* Imposta la larghezza dell'immagine */
+    height: 150px; /* Mantiene le proporzioni dell'immagine */
+  }
+  
