@@ -1,8 +1,18 @@
-/* Nascondi la barra laterale a sinistra */
-.md-sidebar--primary {
-    display: none;
+/* Nascondi la barra laterale a sinistra solo su desktop */
+@media (min-width: 1024px) {
+    .md-sidebar--primary {
+        display: none;
+    }
 }
 
+/* Forza la visibilità del menu di ricerca su mobile */
+@media (max-width: 1024px) {
+    .md-header-nav__source, .md-search {
+        display: block !important;
+    }
+}
+
+/* Nascondi la barra di ricerca a destra */
 .md-header-nav__source, .md-search {
     display: none !important;
 }
